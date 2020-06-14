@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style_souplesse.css" />
+        <link rel="stylesheet" href="css/header_footer.css" />
+        <title>ZenItude</title>
+    </head>
+
+    <body>
+     <header>
+        <div id="sidebar">
+          <div class="toggle_btn" onclick="togglebtn_sidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav class="nav">
+            <ul class="menu">
+              <li class="bar"><a href="meditation.html" class="liens">Méditation</a></li>
+              <li class="bar"><a href="testSPA.html" class="liens">Spa</a></li>
+              <li class="bar"><a href="menu.html" class="liens">Recettes</a></li>
+              <li class="bar"><a href="sport.html" class="liens">Programme sportif</a></li>
+              <li class="bar"><a href="souplesse.html" class="liens"> Souplesse</a></li>
+              <li class="bar"><a href="testIMC.html" class="liens">IMC</a></li>
+            </ul> 
+          </nav>
+        </div>
+        <h1><a href="ac.html" class="liensh1">ZenItude</a></h1>
+      </header>
+      <div class="egaliseur"></div>
+
+      <div class="haut">
+        <div class="photo"><img src="image/lune.jpg"></div>
+        <a class="texte">Souplesse</a>
+      </div>
+
+      <div class="cercle">
+        <div class="elem">
+        <div class="cercle1">
+          <div id="cercle"></div>
+          <p class="num">1</p>
+          <p class="des">Entainement par jours</p>
+        </div>
+        <div class="cercle1">
+          <div id="cercle"></div>
+          <p class="num">3</p>
+          <p class="des">coatch</p>
+        </div>
+        </div>
+        <div class="elem">
+        <div class="cercle1">
+          <div id="cercle"></div>
+          <p class="num">20</p>
+          <p class="des">Exercices disponibles</p>
+        </div>
+        <div class="cercle1">
+          <div id="cercle"></div>
+          <p class="num">100x</p>
+          <p class="des">mieux</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="Souplesse">
+        <div class="photo1"><img src="image/souplesse.jpg" class="image"></div>  
+        <div class="trait"></div>
+        <div class="textsouplesse"><p>La souplesse désigne la qualité physique permettant d'accomplir des mouvements corporels avec la plus grande amplitude (articulaire et musculaire) et aisance possibles, que ce soit d'une manière active (en mouvement dynamique) ou passive (sans mouvement dynamique)</p></div>      
+      </div>
+        
+      <div class="yoga">
+        <div class="gauche">
+          <div class="trait2"></div>
+          <div class="textyoga"><p>Le yoga est la pratique d'un ensemble de postures et d 'exercices de respiration qui vise à apporter un bien être physique et mental. cet ancien art de vivre tel qu'il est expliqué dans les textes se révèle comme un chemin initiatique qui transcende la discipline physique.</p></div>
+          <div class="trait1"></div>
+        </div>
+        <div class="cadre"><img src="image/yoga.jpg" class="photo2"></div>
+      </div>
+
+      <h3>Exercices</h3>
+
+      <div class="main">
+        <!-- Espace réservé aux cartes -->
+        <div class="cards" id="slider">
+          <div id="item">
+                <div class="card">
+                  <img src="image/exo1.jpg" class="imgcard" alt="Tilapia">
+                  <p class="exot">Le chien tête en bas</p>
+                </div>
+                <div class="card">
+                  <img src="image/exo2.jpg"  class="imgcard" alt="Frites">
+                  <p class="exot">Le chien tête en haut</p>
+                </div>
+                <div class="card">
+                  <img src="image/exo9.jpg" class="imgcard" alt="Lasagnes">
+                  <p class="exot">le grand écart latérale</p>
+                </div>
+                <div class="card">
+                  <img src="image/exo10.jpg" class="imgcard" alt="Soupe">
+                  <p class="exot">Le pont </p>
+                </div>
+                <div class="card">
+                  <img src="image/exo3.jpg" class="imgcard" alt="Omelettes">
+                  <p class="exot">la tête sur les genoux</p>
+                </div>
+                <div class="card">
+                  <img src="image/exo4.jpg" class="imgcard" alt="Omelettes">
+                  <p class="exot">la chandelle</p>
+                </div>
+                <div class="card">
+                  <img src="image/exo5.jpg" class="imgcard" alt="Omelettes">
+                  <p class="exot">le papillon</p>
+                </div>
+                <div class="card">
+                  <img src="image/exo6.jpg" class="imgcard" alt="Omelettes">
+                  <p class="exot">le grand écart facial</p>
+                </div>
+                <div class="card">
+                  <img src="image/exo7.jpg" class="imgcard" alt="Omelettes">
+                  <p class="exot">le pied dans la main</p>
+                </div>
+                <div class="card">
+                  <img src="image/exo8.jpg" class="imgcard" alt="Omelettes">
+                  <p class="exot">la boule</p>
+                </div>
+      
+          </div>
+        </div>
+
+         <footer class="footer"> 
+        <form name="login" id="formulaire" method="post">
+          <input type="email" placeholder="Newsletter" aria-label="Your email" class="mail">
+          <button class="signin" type="submit" onclick="signin()">s'inscrire</button>
+        </form>
+        <div class="lien">
+          <div class="contenue">
+            <div class="logo">
+              <h2 class="zen"> ZenItude </h2>
+            </div>
+            <div class="wrap">
+              <div class="lienfooter" id="reseaux"> 
+                  <h2 class="footertitre">réseaux</h2>
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="https://www.facebook.com/" class="textfooter">  facebook </a></li>
+                    <li class="lifooter"><a href="https://twitter.com/explore" class="textfooter"> twitter</a></li>
+                    <li class="lifooter"><a href="https://www.linkedin.com" class="textfooter"> linkedin</a></li>
+                  </ul>
+                </div>
+                <div class="lienfooter"> 
+                  <h2 class="footertitre">lien</h2> 
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="ac.html" class="textfooter">  home </a></li>
+                    <li class="lifooter"><a href="menu.html" class="textfooter"> recettes </a></li>
+                    <li class="lifooter"><a href="souplesse.html" class="textfooter"> souplesse</a></li>
+                  </ul>
+                </div>
+                <div class="lienfooter"> 
+                  <h2 class="footertitre">contacte</h2>
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="equipe.html" class="textfooter"> qui sommes-nous</a></li>
+                    <li class="lifooter"> téléphone</li>
+                    <li class="lifooter">mail</li>
+                  </ul> 
+                </div>
+              </div>
+              
+            </div>
+                
+          <br><a class="copy">Copyright &copy; 2020 - All Right Reserved</a>
+        </div>
+        
+      </footer>
+
+      <script type="text/javascript">
+        function togglebtn_sidebar() {
+          document.getElementById("sidebar").classList.toggle('active');
+        }
+        function signin(){
+          alert("adresse email ajouté!")
+        }
+      </script>
+
+      
+    </body>
+</html>

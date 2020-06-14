@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/testIMC.css" />
+    <link rel="stylesheet" href="css/header_footer.css" />
+
+    <title>ZenItude - Pause Bien Être</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="sidebar">
+          <div class="toggle_btn" onclick="togglebtn_sidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav class="nav">
+            <ul class="menu">
+              <li class="bar"><a href="meditation.html" class="liens">Méditation</a></li>
+              <li class="bar"><a href="testSPA.html" class="liens">Spa</a></li>
+              <li class="bar"><a href="menu.html" class="liens">Recettes</a></li>
+              <li class="bar"><a href="sport.html" class="liens">Programme sportif</a></li>
+              <li class="bar"><a href="souplesse.html" class="liens"> Souplesse</a></li>
+              <li class="bar"><a href="testIMC.html" class="liens">IMC</a></li>
+            </ul> 
+          </nav>
+        </div>
+        <h1><a href="ac.html" class="liensh1">ZenItude</a></h1>
+      </header>
+      <div class="egaliseur"></div>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <div class="P_T">
+        <label for="poid">Poid (en kg, entre 40 et 130 kg) ?</label>
+        <input type="number" id="user_poid" name="user_poid" min="40" max="130" placeholder="Ex: 72" required />
+
+        <label for="taille">Taille (en cm, entre 140 et 200cm) ?</label>
+        <input type="number" id="user_taille" name="user_taille" min="140" max="200" placeholder="Ex : 163" required />
+        <button value="submit" class="bouton" id="submit" type="submit" onclick="calculIMC();">Calculer</button>
+
+    </div>
+    <canvas class="myCanvas">
+        <p>Votre navigateur ne prend pas en charge canvas.</p>
+    </canvas>
+    <canvas class="myCanvasBis">
+        <p>Votre navigateur ne prend pas en charge canvas.</p>
+    </canvas>
+    <script>
+        var canvas = document.querySelector('.myCanvas');
+        var canvas2 = document.querySelector('.myCanvasBis');
+        var width = canvas.width = "800";
+        var height = canvas.height = "535";
+        var width = canvas2.width = "1000";
+        var height = canvas2.height = "70";
+        function calculIMC() {
+            var saisi_pd = document.getElementById("user_poid").value;
+            var saisi_taille = document.getElementById("user_taille").value;
+            if ((saisi_pd < 40) || (saisi_pd > 130) || (saisi_taille < 140) || (saisi_taille > 200)) {
+                alert("Votre poid ou votre taille est incorect");
+            }
+            var lepoid = ((saisi_pd - 40) * 8) + 50;//calcule le nombre de pixel dans le canvas pour un poid donné
+            var lataille = (15 + (200 - saisi_taille) * 8.25); //calcule le nombre de pixel dans le canvas pour une taille donné
+            monIMC(lepoid, lataille);
+            texteIMC(saisi_pd, saisi_taille);
+        }
+        function monIMC(pdIMC, tailleIMC) {
+            var ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = "15pt Calibri,Geneva,Arial";
+            ctx.fillStyle = "black";
+            ctx.fillText("X", pdIMC, tailleIMC);
+        }
+        function texteIMC(pdIMC, tailleIMC) {
+            var ctx2 = canvas2.getContext('2d');
+            ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+            ctx2.font = "30pt Calibri,Geneva,Arial";
+            ctx2.fillStyle = "black";
+            var calcul = (pdIMC / Math.pow(tailleIMC / 100, 2));
+            var arrondi = calcul * 100;
+            arrondi = Math.round(arrondi);
+            calcul = arrondi / 100;
+            ctx2.fillText("VOTRE IMC EST DE " + calcul, 400, 30);
+            if (calcul <= 18.5) {
+                ctx2.font = "20pt Calibri,Geneva,Arial";
+                ctx2.fillText("Vous êtes en situation d’insuffisance pondérale", 350, 60);
+            }
+            if ((calcul > 18.5) && (calcul <= 25)) {
+                ctx2.font = "20pt Calibri,Geneva,Arial";
+                ctx2.fillText("Vous êtes de corpulence normale", 420, 60);
+            }
+            if ((calcul > 25) && (calcul <= 30)) {
+                ctx2.font = "20pt Calibri,Geneva,Arial";
+                ctx2.fillText("Vous êtes en situation de surpoids", 420, 60);
+            }
+            if ((calcul > 30) && (calcul <= 35)) {
+                ctx2.font = "20pt Calibri,Geneva,Arial";
+                ctx2.fillText("Vous êtes en situation d'obésité modérée", 380, 60);
+            }
+            if (calcul > 35) {
+                ctx2.font = "20pt Calibri,Geneva,Arial";
+                ctx2.fillText("Vous êtes en situation d'obésité élevée ou morbide", 340, 60);
+            }
+        }
+
+    </script>
+
+    <img class="img_IMC" src="image/IMCrepart.png" alt="Répartition des IMC selon le sexe en 2016">
+    <p2>Source: Santé Publique France, BEH (2016)</p2>
+    <p1>
+        Il faut savoir que le calcul de <strong>l’indice de masse corporelle ne tient pas compte de la répartition des
+            liquides.</strong>
+        <br />Par exemple en cas de rétention d’eau, il arrive que l’on constate une
+        prise de poids rapide. Or, il ne s’agit pas de kilos liés à un excès alimentaire mais d’une <strong>variation
+            transitoire du poids.</strong>
+        <br /><br />
+        <strong>L’IMC ne tient pas compte non plus de la répartition des masses osseuses, musculaires et en graisses
+            dans le
+            corps.</strong> C’est pourquoi deux personnes ayant le même IMC peuvent avoir des corpulences complètement
+        différentes.
+        <br /><br />
+        L’IMC reste néanmoins un <strong>indicateur utile et recommandé</strong> par les spécialistes. <br /><br />Si
+        votre IMC vous semble anormal
+        et que vous vous demandez si vous êtes en surpoids, parlez-en avec votre médecin. Il pourra vous conseiller,
+        vous aider à
+        interpréter votre IMC, et vous prescrire si besoin des analyses complémentaires (bilan des graisses et des
+        sucres).
+    </p1>
+
+</body>
+
+
+<footer class="footer"> 
+        <form name="login" id="formulaire" method="post">
+          <input type="email" placeholder="Newsletter" aria-label="Your email" class="mail">
+          <button class="signin" type="submit" onclick="signin()">s'inscrire</button>
+        </form>
+        <div class="lien">
+          <div class="contenue">
+            <div class="logo">
+              <h2 class="zen"> ZenItude </h2>
+            </div>
+            <div class="wrap">
+              <div class="lienfooter" id="reseaux"> 
+                  <h2 class="footertitre">resaux</h2>
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="https://www.facebook.com/" class="textfooter">  facebook </a></li>
+                    <li class="lifooter"><a href="https://twitter.com/explore" class="textfooter"> twitter</a></li>
+                    <li class="lifooter"><a href="https://www.linkedin.com" class="textfooter"> linkedin</a></li>
+                  </ul>
+                </div>
+                <div class="lienfooter"> 
+                  <h2 class="footertitre">lien</h2> 
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="ac.html" class="textfooter">  home </a></li>
+                    <li class="lifooter"><a href="menu.html" class="textfooter"> recette </a></li>
+                    <li class="lifooter"><a href="souplesse.html" class="textfooter"> souplesse</a></li>
+                  </ul>
+                </div>
+                <div class="lienfooter"> 
+                  <h2 class="footertitre">contacte</h2>
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="equipe.html" class="textfooter"> qui sommes-nous</a></li>
+                    <li class="lifooter"> téléphone</li>
+                    <li class="lifooter">mail</li>
+                  </ul> 
+                </div>
+              </div>
+              
+            </div>
+                
+          <br><a class="copy">Copyright &copy; 2020 - All Right Reserved</a>
+        </div>
+        
+      </footer>
+<script type="text/javascript">
+    function togglebtn_sidebar() {
+        document.getElementById("sidebar").classList.toggle('active');
+    }
+    function signin(){
+          alert("adresse email ajouté!")
+        }
+</script>
+
+
+</html>

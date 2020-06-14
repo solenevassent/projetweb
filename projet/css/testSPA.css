@@ -1,0 +1,138 @@
+
+/*////////////////////////////////////////////////////////
+					body
+///////////////////////////////////////////////////////*/
+
+.row{ /* En tête image & texte a coté */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.colone{ /* En tête image & texte a coté */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 5em;
+	margin-right: 40px;
+	margin-left: 40px;
+	width: 42%;
+}
+
+@media screen and (max-width: 600px){
+    .colone{
+       width: 100%;
+       margin-left: 0px;
+    }
+
+    .row img{
+    	width: 100%;
+    	height: auto;
+
+    }
+
+}
+
+
+.row img{ /* En tête image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+}
+
+p1{ /* En tête Texte spa*/
+	font-size: 14px;
+	font-family: inherit;
+	letter-spacing: 0.15em;
+    text-align: center;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+p2{ /*"Lancez vous !"*/
+    margin-left: 70px;
+	font-size: 30px;
+	font-family: inherit;
+	letter-spacing: 0.25em;
+    text-align: center;
+    display: inline-block;
+}
+
+p3{ /*Prennez le temps de vous ressourcer*/
+    margin-left: 60px;
+	font-size: 40px;
+	font-family: inherit;
+	letter-spacing: 0.25em;
+    text-align: center;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px){
+    p3{
+    	margin-left: 30px;
+    	font-size: 38px;
+    }
+}
+
+
+
+p4{ /*Titres des deux colonnes "+ beaux spas" & "clique sur"*/
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	font-family: inherit;
+    text-align: center;
+	display: inline-block;
+	margin-left: 35px;
+}
+
+p5{ /*Nom des 4 + beaux spas*/
+	font-size: 14px;
+	font-family: inherit;
+	letter-spacing: 0.15em;
+    text-align: center;
+	display: inline-block;
+}
+
+.cartespas{ /*Carte "API" interactive de France */
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 5em;
+	max-height: 300px;
+	max-width: 450px;
+}
+
+.tous_les_spas{ /*Row des 4 spas et de la carte */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 5em;
+	flex-wrap: wrap;
+}
+
+.meilleurspas{
+	text-align: center;
+}
+
+.les_spas img{ /*Img 4 spas de France */
+	max-width: 150px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 6px #aa62e6;
+}
+
+
+.checked { /*etoiles "allumées"*/
+	color: #E7C0EC ;
+}
+
+
+.les_spas{ /*4 spas de France*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	display: inline-block;
+	text-align: center;
+	margin-left: 35px;
+}
+

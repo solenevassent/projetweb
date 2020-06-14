@@ -1,0 +1,310 @@
+
+/*////////////////////////////////////////////////////////
+					body
+///////////////////////////////////////////////////////*/
+
+.haut {
+	position:relative;
+	height: 40em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+}
+
+.photo {
+	position: absolute;
+	z-index: 1;
+}
+
+.texte {
+	font-family: inherit;
+	letter-spacing: 0.20em;
+	font-size: 2em;
+	z-index: 2;
+	background-color: #CFCFCF;
+}
+
+.cercle{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-left: 15em;
+	height: 25em;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+}
+.elem{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 14em;
+
+
+}
+.cercle1{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 13em;
+
+}
+#cercle {
+    width: 10em;
+    height: 10em;
+    border-radius: 15em;
+    background: #292B2E;
+    position:absolute;
+    z-index:1;
+    
+}
+
+@media screen and (max-width: 600px){
+    #cercle{
+    	width: 9em;
+    	height: 9em;
+    	border-radius: 14em;
+    }
+
+    .cercle1{
+    	margin-right: 9em;
+    }
+
+    .cercle{
+    	padding-left: 9em;
+    	height: 35em;
+    }
+}
+
+.num{
+	position:absolute;
+	z-index:2;
+	font-family: inherit;
+	letter-spacing: 0.20em;
+	font-size: 3em;
+	color: white;
+
+}
+
+.des{
+	text-align: center;
+	width: 4em;
+	margin-top: 15em;
+
+}
+
+
+.Souplesse{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 5em;
+	align-items: center;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+}
+
+.image{
+	width: 30em;
+	height: auto;
+}
+
+.trait{
+	height: 20em;
+	border-right: 1px solid #7E7E7E;
+}
+
+@media screen and (max-width: 600px){
+    .trait{
+    	border-right: none;
+    	margin-top: 1em;
+    	height: 1em;
+        width: 5em;
+		border-top: 1px solid #7E7E7E;
+    }
+}
+
+.textsouplesse{
+	width: 25em;
+	text-align: center;
+}
+
+.yoga{
+	
+	margin-top: 7em;
+	height: 30em;
+	background-color: #8A8A8A;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+
+}
+
+.cadre{
+	width: 17em;
+	height: 22em;
+	border-top: 1px solid #BBBBBB;
+	border-right: 1px solid #BBBBBB;
+
+}
+.photo2{
+	width: 15em;
+	height: 20;
+	margin-top: 2em;
+
+}
+
+.trait1{
+	height: 2em;
+	width: 6em;
+	margin-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #BBBBBB;
+
+}
+
+.trait2{
+	height: 2em;
+	width: 6em;
+	margin-bottom: 4em;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #BBBBBB;
+}
+
+@media screen and (max-width: 600px){
+    .trait2{
+    	margin-bottom: 1em;
+    }
+
+    .trait1{
+    	border:none;
+    }
+    .cadre{
+    	margin-top: -5em;
+    }
+
+    .yoga{
+    	height: 45em;
+    }
+}
+
+.textyoga{
+	max-width: 35em;
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+	margin-top: 3em;
+	font-family: inherit;
+	letter-spacing: 0.20em;
+	font-size: 3em;
+}
+
+
+.exot{
+	text-align: center;
+	margin-top: 2em;
+	font-family: inherit;
+	letter-spacing: 0.17em;
+	font-size: 1em;
+}
+
+
+
+/*pour designer les cartes*/
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   background-color: #C7C2C2;
+   width: 12em;
+   height: 15em;
+   display : inline-block;
+   margin-right : 3em;
+   text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 30px 75px 0 rgba(0,0,0,0.2);
+}
+
+/* Pour que les images ait des bouts  */
+.imgcard {
+   width: 12em;
+   height: 7.5em;
+ }
+
+
+#slider{
+  text-align: center;
+}
+
+.cards{
+  box-sizing: border-box;
+}
+.checked {
+    color: #f4511e;
+}
+
+
+#item{
+  display: inline-flex;
+  height:15em;
+  animation:defilement 40s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+#slider{
+  display: inline-block;
+  position: relative;
+  padding: 100px;
+}
+
+@keyframes defilement {
+    0% {
+        transform: translateX(0em);
+    }
+
+    50% {
+        transform: translateX(-72em);
+    }
+
+    100% {
+        transform: translateX(0em) ;
+    }
+}
+
+.main{
+	overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 600px){
+    @keyframes defilement {
+	    0% {
+	        transform: translateX(0em);
+	    }
+
+	    50% {
+	        transform: translateX(-132em);
+	    }
+
+	    100% {
+	        transform: translateX(0em) ;
+	    }
+	}
+}

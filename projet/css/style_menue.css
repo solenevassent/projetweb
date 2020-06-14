@@ -1,0 +1,165 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: "montserrat";
+    background: #F0E7F2;
+    cursor: grab;
+}
+.test{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-section{
+    margin-top: 8em;
+    background: #F0E7F2;
+    text-align: center;
+}
+
+
+ .h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 4px solid;
+    padding-bottom:10px;
+
+}
+
+
+.pers{
+    float: left;
+    overflow: hidden;
+    padding: 20px 0;
+    width: calc(100%/5);
+    transition: 0.4s;
+}
+
+.intro{
+    overflow: hidden;
+    padding: 50px 0;
+    width: calc(100%/2);
+    float: right;
+}
+
+.why{
+   margin-left: 3em;
+}
+
+.introh2{
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom:10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.intro img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+.h2:hover{
+    color:black;
+}
+
+h5{
+    margin-right: 50px;
+    text-align: center;
+    color: #301233;
+    font-family: "montserrat";
+    display: inline-block;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.personne{
+    padding-bottom: 400px;
+}
+
+@media screen and (max-width: 600px){
+    .personne{
+        padding-bottom: 1700px;
+    }
+}
+
+.hover img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.pers img{
+    width: 200px;
+    height: 200px;
+    overflow:hidden;
+    box-shadow: 1px 1px 12px #555;
+    /*border-width: 2ex 1.25ex 0.5ex;*/
+}
+
+
+.checked{
+    color: #F1DA1C;
+}
+
+h3{
+    margin: 16px 0;
+    text-transform: uppercase;
+    font-family: "montserrat";
+    font-size: 20px;
+    display: inline-block;
+}
+
+
+.social{
+    margin-top: 12px;
+}
+
+.social a{
+    margin: 0 4px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    transition: 0.4s;
+}
+
+.hover img:hover{
+
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+a:hover{
+    transform:  scale(1.3);
+}
+
+.pers a i{
+    color: #333;
+    line-height: 30px;
+}
+
+img{
+    cursor: zoom-in;
+}
+
+@media screen and (max-width: 600px){
+    .intro{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .pers{
+        width: 100%;
+    }
+}
+

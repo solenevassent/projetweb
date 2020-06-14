@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style_ac.css" />
+         <link rel="stylesheet" href="css/header_footer.css" />
+        <title>ZenItude</title>
+    </head>
+
+    <body>
+       <header>
+        <div id="sidebar">
+          <div class="toggle_btn" onclick="togglebtn_sidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav class="nav">
+            <ul class="menu">
+              <li class="bar"><a href="meditation.html" class="liens">Méditation</a></li>
+              <li class="bar"><a href="testSPA.html" class="liens">Spa</a></li>
+              <li class="bar"><a href="menu.html" class="liens">Recettes</a></li>
+              <li class="bar"><a href="sport.html" class="liens">Programme sportif</a></li>
+              <li class="bar"><a href="souplesse.html" class="liens"> Souplesse</a></li>
+              <li class="bar"><a href="testIMC.html" class="liens">IMC</a></li>
+            </ul> 
+          </nav>
+        </div>
+        <h1><a href="ac.html" class="liensh1">ZenItude</a></h1>
+      </header>
+      <div class="egaliseur"></div>
+
+
+      <div class="image"></div>
+      <div class="row">
+        <div class="article">
+            <h2 class="titrearticle"> Découvrez nos articles </h2>
+            <p>Pour ne pas perdre sa Zenitude face au télétravail!</p>
+            <a href="sport.html" class="decrouvrir"> Découvrir</a>
+            <div class="img_article"><img src="image/ecrire1.jpg"></div>
+        </div>
+        <div class="article">
+          <h2 class="titrearticle"> Découvrez notre playliste </h2>
+          <p>Une playlist avec les meilleurs sons pour décompresser des enfants</p>
+          <a href="https://open.spotify.com/playlist/1VNiYxEL8Jyi15nTXR6KrZ" target = "_blank" class="decrouvrir"> Découvrir</a>
+          <div class="img_article"><img src="image/musique.jpg"></div>
+        </div>
+      </div>
+      
+       <footer class="footer"> 
+        <form name="login" id="formulaire" method="post">
+          <input type="email" placeholder="Newsletter" aria-label="Your email" class="mail" id="texte">
+          <button class="signin" type="submit" onclick="signin()">s'inscrire</button>
+        </form>
+        <div class="lien">
+          <div class="contenue">
+            <div class="logo">
+              <h2 class="zen"> ZenItude </h2>
+            </div>
+            <div class="wrap">
+              <div class="lienfooter" id="reseaux"> 
+                  <h2 class="footertitre">réseaux</h2>
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="https://www.facebook.com/" class="textfooter">  facebook </a></li>
+                    <li class="lifooter"><a href="https://twitter.com/explore" class="textfooter"> twitter</a></li>
+                    <li class="lifooter"><a href="https://www.linkedin.com" class="textfooter"> linkedin</a></li>
+                  </ul>
+                </div>
+                <div class="lienfooter"> 
+                  <h2 class="footertitre">lien</h2> 
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="ac.html" class="textfooter">  home </a></li>
+                    <li class="lifooter"><a href="menu.html" class="textfooter"> recettes </a></li>
+                    <li class="lifooter"><a href="souplesse.html" class="textfooter"> souplesse</a></li>
+                  </ul>
+                </div>
+                <div class="lienfooter"> 
+                  <h2 class="footertitre">contact</h2>
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="equipe.html" class="textfooter"> qui sommes-nous</a></li>
+                    <li class="lifooter"> téléphone</li>
+                    <li class="lifooter">mail</li>
+                  </ul> 
+                </div>
+              </div>
+              
+            </div>
+                
+          <br><a class="copy">Copyright &copy; 2020 - All Right Reserved</a>
+        </div>
+        
+      </footer>
+      <script type="text/javascript">
+        function togglebtn_sidebar() {
+          document.getElementById("sidebar").classList.toggle('active');
+        }
+
+        function signin(){
+          alert("adresse email ajouté!")
+        }
+
+      </script>
+    </body>
+</html>

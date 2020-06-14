@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: "montserrat";
+    background: #F0E7F2;
+}
+
+.team-section{
+	background: #F0E7F2;
+	text-align: center;
+}
+
+.inner-width{
+	max-width: 1800px;
+	margin: auto;
+	padding: 40px;
+	color: #333;
+	overflow: hidden;
+}
+
+.h22{
+	font-family: inherit;
+	letter-spacing: 0.20em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	display: inline-block;
+	border-bottom: 4px solid;
+	padding-bottom:8px;
+
+
+}
+
+.team-section .h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	display: inline-block;
+	border-bottom: 4px solid;
+	padding-bottom:8px;
+
+}
+
+.team-section h3{
+	font-size: 15px;
+	text-transform: uppercase;
+	display: inline-block;
+	padding-bottom:10px;
+
+}
+
+.pers{
+	margin-top: 2em;
+	width: 25em;
+}
+
+ .h2:hover{
+	color:black;
+}
+
+/*.pe img:hover{
+	background: #DFDCE0;
+}
+*/
+
+
+.pers img{
+	width: 200px;
+	height: 200px;
+	overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:120px;
+    border-top-left-radius: 50%;
+	border: black 10px double;
+	background-clip: content-box;
+	border-top-right-radius: 50%;
+	box-shadow: 1px 1px 12px #555;
+	/*border-width: 2ex 1.25ex 0.5ex;*/
+}
+
+.
+
+.nom{
+	margin: 16px 0;
+	text-transform: uppercase;
+}
+
+.role{
+	font-size: 15px;
+	color: #733680;
+	text-align: justify;
+
+}
+
+.role:hover{
+	color: black;
+}
+
+.social{
+	margin-top: 12px;
+}
+
+.social a{
+	margin: 0 4px;
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	transition: 0.4s;
+}
+
+.hover img:hover{
+
+	background-color: transparent;
+	border: none;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+a:hover{
+	transform: 	scale(1.3);
+}
+
+.pers a i{
+	color: #333;
+	line-height: 30px;
+
+}
+
+.personne{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}

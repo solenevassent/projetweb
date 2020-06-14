@@ -1,0 +1,270 @@
+
+/*////////////////////////////////////////////////////////
+					body
+///////////////////////////////////////////////////////*/
+body{ /*contenu ma page*/
+	width:100%;
+	font-size: 100%;
+	background-image: url(../image/nuage.jpg);
+	background-size: 100%;
+}
+
+.row{ /*Permet d'avoir deux colonnes dans ma page*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 10em;
+	flex-wrap: wrap;
+	
+}
+
+.colone{ /*les deux colonnes de ma page*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 10em;
+}
+
+.article{ /* Partie du haut des deux colonnes de la page */
+	margin-top: 10em;
+	max-width: 30em;
+	height: 25em;
+}
+
+.inspir{ /* Propriétés du texte "inspire" */
+	animation-duration: 10s;
+  	animation-name: inspirertxt;
+	animation-iteration-count: infinite;
+	text-align: center;
+	position: relative;
+	z-index:2;
+	font-size:200%;
+	opacity: 0.60;
+	transform : translateY(-280%);
+}
+
+@keyframes inspirertxt{ /* Animation Texte "inspire" en alterné */
+	from {
+	  color: rgb(201, 85, 216);
+	}
+	50%{
+		color: rgb(201, 85, 216);
+	}
+		
+	55%{
+		color: transparent;
+	}
+
+	to{
+		color: transparent;
+	}
+}
+
+.expire{ /* Propriétés du texte "expire" */
+	animation-duration: 10s;
+  	animation-name: expirertxt;
+	animation-iteration-count: infinite;
+	position: relative;
+	transform : translateY(-100%) translateX(0.5%);
+}
+  
+@keyframes expirertxt{ /* Animation Texte "expire" en alterné */
+	from {
+		color: transparent;
+	}
+
+	50%{
+	  color:transparent;
+	}
+	
+	52%{
+	  color:rgb(201, 85, 216);
+	}	  
+  
+	to{
+		color: rgb(201, 85, 216);
+	}
+}
+
+.conteneur { /*Propriétées du rond fixe (rose clair) de l'animation */
+	margin-left: 40%;
+	text-align: center;
+	z-index:2;
+	width: 100px;
+	height: 100px;
+	background-color: #E7C0EC;
+	border-radius: 100%;
+	text-align: center;
+	position: relative;
+	opacity: 0.40;
+	transform : translateY(-210%);
+}
+
+.contenu { /* Propriétées du rond qui change de taille (violet) de l'animation */
+	z-index:2;
+	background-color: rgb(201, 85, 216);
+	border-radius: 100%;
+	animation-name: respiration;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	position: relative;
+	top:50%;
+	left:50%;
+	transform : translateY(-50%) translateX(-50%);
+}
+
+@keyframes respiration {  /* Animation rond qui grossi et retrecis */
+	from {
+		width: 10%;
+		height: 10%;
+
+	}
+
+	to {
+		width:100%;
+		height: 100%;
+	}
+}
+
+
+.h2{ /* Titres des deux colonnes */
+	position: relative;
+	background: whitesmoke;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin-top: 1em;*/
+	margin-bottom: 1em;
+}
+
+p1,p2{ /* Texte des deux colonnes*/
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 11;
+	color: #67717C;
+	font-family: inherit;
+	height: 10em;
+	letter-spacing: 0.25em;
+	background-color: whitesmoke;
+	width: 100%;
+	height: 100%;
+	max-width: 30em;
+}
+
+.img_respire{ /* Image femme qui respire */
+	width: 100%;
+	height:68%;
+	position: relative;
+	z-index:1;
+}
+
+.videomedite{ /* Video Youtube */
+	width: 100%;
+	height: 68%;
+}
+
+.h2:before, .h2:after{ /* Animation autour titre des deux colonnes*/
+	content: '';
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg,  rgb(231, 192, 236), #c375e7, #aa62e6,rgb(201, 85, 216),#E7C0EC, #aa62e6, #c375e7, 
+	rgb(231, 192, 236));
+	background-size: 500%;
+	z-index: -1;
+	animation: steam 100s linear infinite;
+}
+
+@keyframes steam { /* Animation autour titre */
+	0% {
+		background-position: 0;
+	}
+	50% {
+		background-position: 500%;
+	}
+	100% {
+		background-position: 0;
+	}
+}
+
+h2:after{ /* Animation autour titre */
+	filter: blur(25px);
+}
+
+.test:before, .test:after { /* Animation du fond du rond chakras*/
+	border-radius: 100%;
+	content: '';
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg,  rgb(231, 192, 236), #c375e7, #aa62e6,rgb(201, 85, 216),#E7C0EC, #aa62e6, #c375e7, 
+	rgb(231, 192, 236));
+	background-size: 5000%;
+	z-index: -1;
+	animation: steambis 700s linear infinite;
+}
+
+.test { /* Animation du fond du rond chakras*/
+	border-radius: 100%;
+	position: relative;
+	margin: 300px auto 0;
+	width: 500px;
+	height: 500px; /*500*/
+	transform : translateY(-40%);
+	padding: 70px;
+	text-align: center;
+}
+
+p4{ /* Texte sur les chakras*/
+	font-size: 11;
+	font-family: inherit;
+	letter-spacing: 0.19em;
+	text-align: center;
+}
+
+p3,h3{  /* Titre et pied du texte chakras*/
+	font-style: italic;
+	font-family: inherit;
+	letter-spacing: 0.55em;
+	text-align: center;
+}
+
+.test:after { /* Animation chakras */
+	filter: blur(50px);
+}
+
+@keyframes steambis { /* Animation chakras */
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: 5000%;
+	}
+}
+
+.img_chakras{ /* Img chakras */
+	width: 400px;
+}
+
+/*////////////////////////////////////////////////////////
+					footer
+///////////////////////////////////////////////////////*/
+
+footer{
+  	width: 100%;
+	background-color: #E7C0EC ;
+	position: absolute; 
+	
+}
+
+.mail{
+	height: 2em;
+	background-color: #292B2E;
+}

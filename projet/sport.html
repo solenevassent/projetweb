@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style_sport.css" />
+        <link rel="stylesheet" href="css/header_footer.css" />
+        <title>ZenItude</title>
+    </head>
+
+    <body>
+      <header>
+        <div id="sidebar">
+          <div class="toggle_btn" onclick="togglebtn_sidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <nav class="nav">
+            <ul class="menu">
+              <li class="bar"><a href="meditation.html" class="liens">Méditation</a></li>
+              <li class="bar"><a href="testSPA.html" class="liens">Spa</a></li>
+              <li class="bar"><a href="menu.html" class="liens">Recettes</a></li>
+              <li class="bar"><a href="sport.html" class="liens">Programme sportif</a></li>
+              <li class="bar"><a href="souplesse.html" class="liens"> Souplesse</a></li>
+              <li class="bar"><a href="testIMC.html" class="liens">IMC</a></li>
+            </ul> 
+          </nav>
+        </div>
+        <h1><a href="ac.html" class="liensh1">ZenItude</a></h1>
+      </header>
+      <div class="egaliseur"></div>
+
+
+      <div class="haut">
+        <img src="image/sport6.png">
+      </div>
+
+
+
+      <article id="generale">
+        <br>
+        <h2 class="titre">lancez vous!</h2>
+        <div class="bordure"></div>
+        <nav class="page">
+          <div class="bouton">
+            <img src="image/cardio.jpeg">
+            <button class="cardio" onclick="showCardio()" id="button">cardio</button>
+          </div>
+          <div class="bouton">
+            <img src="image/renfo.jpg">
+            <button class="force" onclick="showForce()" id="button">renforcement</button>
+          </div>
+          <div class="bouton">
+            <img src="image/conseil.jpeg">
+            <button class="conseil" onclick="showConseil()" id="button">conseils</button>
+          </div>
+        </nav>
+        <br>
+        <div class="bordure"></div>
+        <br>
+
+        <div id="cardio">
+          <div class="gauche">
+              <iframe width="484" height="245" src="https://www.youtube.com/embed/Hvj1SveuPWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="texte">
+              <h3> On commence en douceur</h3>
+              <p> reprennez le sport avec une séance courte!</p>
+            </div> 
+
+          </div>
+          <div class="droite">
+            <div class="texte">
+              <h3> On fait du sport en s'amusant</h3>
+              <p>pour tout ceux qui n'aime pas le sport voici la solution</p>
+            </div>
+            <iframe width="484" height="245" src="https://www.youtube.com/embed/8DZktowZo_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+          </div>
+        </div>
+
+        <div id="force">
+          <div class="gauche">
+             <iframe width="484" height="245" src="https://www.youtube.com/embed/02bLJeB_Ar0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="texte">
+              <h3> se sculper un corps</h3>
+              <p> pour au moin s'occuper quand on doit rester à la maison</p>
+            </div> 
+
+          </div>
+          <div class="droite">
+            <div class="texte">
+              <h3> reprendre du muscle</h3>
+              <p>être plus tonic et se sentir mieux!</p>
+            </div>
+            <iframe width="484" height="245" src="https://www.youtube.com/embed/8DZktowZo_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+          </div>
+          
+        </div>
+
+        <div id="conseil">
+          <div class="gauche1">
+            <h2 class="titre"> Boire </h2>
+            <p class="speach">Le corps étant composé à  70 % d'eau, il est nécessaire de s'hydrater, tout au long de la journée, pour alimenter tous les organes et permettre  ainsi au corps de fonctionner de manière optimale.<p>
+            <h2 class="titre"> Bien manger </h2>
+            <p class="speach">découvrez toutes les meilleurs recettes pour reprendre une vie healty grâce à notre page <a href="menu.html" class="nav-sport">recette</a><p>
+            <h2 class="titre"> IMC </h2>
+            <p class="speach">Pour comprendre le fonctionnement et l'évolution de votre corps, suivez votre progression avec notre page <a href="testIMC.html" class="nav-sport">IMC</a><p>
+          </div>
+        </div>
+
+
+      
+      </article>
+      
+      <footer class="footer"> 
+        <form name="login" id="formulaire" method="post">
+          <input type="email" placeholder="Newsletter" aria-label="Your email" class="mail">
+          <button class="signin" type="submit" onclick="signin()">s'inscrire</button>
+        </form>
+        <div class="lien">
+          <div class="contenue">
+            <div class="logo">
+              <h2 class="zen"> ZenItude </h2>
+            </div>
+            <div class="wrap">
+              <div class="lienfooter" id="reseaux"> 
+                  <h2 class="footertitre">réseaux</h2>
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="https://www.facebook.com/" class="textfooter">  facebook </a></li>
+                    <li class="lifooter"><a href="https://twitter.com/explore" class="textfooter"> twitter</a></li>
+                    <li class="lifooter"><a href="https://www.linkedin.com" class="textfooter"> linkedin</a></li>
+                  </ul>
+                </div>
+                <div class="lienfooter"> 
+                  <h2 class="footertitre">lien</h2> 
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="ac.html" class="textfooter">  home </a></li>
+                    <li class="lifooter"><a href="menu.html" class="textfooter"> recettes </a></li>
+                    <li class="lifooter"><a href="souplesse.html" class="textfooter"> souplesse</a></li>
+                  </ul>
+                </div>
+                <div class="lienfooter"> 
+                  <h2 class="footertitre">contacte</h2>
+                  <ul class="ulfooter">
+                    <li class="lifooter"><a href="equipe.html" class="textfooter"> qui sommes-nous</a></li>
+                    <li class="lifooter"> téléphone</li>
+                    <li class="lifooter">mail</li>
+                  </ul> 
+                </div>
+              </div>
+              
+            </div>
+                
+          <br><a class="copy">Copyright &copy; 2020 - All Right Reserved</a>
+        </div>
+        
+      </footer>
+
+      <script type="text/javascript">
+        function togglebtn_sidebar() {
+          document.getElementById("sidebar").classList.toggle('active');
+        }
+
+        function arriver(){ //masque le tableau de tâche
+                document.querySelector("#force").style.display = "none";
+                document.querySelector("#conseil").style.display = "none";
+                document.querySelector("#cardio").style.display = "none";
+            }
+
+        function showCardio(){ //masque le tableau de tâche
+                document.querySelector("#force").style.display = "none";
+                document.querySelector("#conseil").style.display = "none";
+                document.querySelector("#cardio").style.display = "";
+            }
+
+        function showForce(){ //masque le tableau de tâche
+                document.querySelector("#force").style.display = "";
+                document.querySelector("#conseil").style.display = "none";
+                document.querySelector("#cardio").style.display = "none";
+            }
+
+        function showConseil(){ //masque le tableau de tâche
+                document.querySelector("#force").style.display = "none";
+                document.querySelector("#conseil").style.display = "";
+                document.querySelector("#cardio").style.display = "none";
+            }
+
+        function signin(){
+          alert("adresse email ajouté!")
+        }
+
+
+        //main
+        arriver();
+
+      </script>
+    </body>
+</html>

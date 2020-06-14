@@ -1,0 +1,167 @@
+/*////////////////////////////////////////////////////////
+					body
+///////////////////////////////////////////////////////*/
+
+
+
+/*haut de page*/
+.haut{
+	display: flex;
+	width: 100%;
+	height: 50em;
+	text-align: center;
+}
+@media screen and (max-width: 600px){
+	.haut{
+		height: 17em;
+	}
+}
+
+.haut img{
+	margin: auto; 
+	width: 90%
+
+}
+
+
+/* nav dans la page */
+.page{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 5em;
+	flex-wrap: wrap;
+}
+
+
+#button{
+	border:none;
+	background-color: #F8F8F8;
+	margin-top: 3em;
+	font-family: inherit;
+	letter-spacing: 0.20em;
+	border: 1px groove #A8A7A7;
+	height: 3em;
+	width: 9em;
+}
+
+button:hover{
+	border: 2px groove #E7C0EC;
+}
+
+
+
+.bouton{
+	width: 10em;
+	height: 15em;
+	background-color: #F8F8F8;
+	margin-right: 4em;
+	margin-top: 2em;
+	text-align: center;
+	-webkit-box-shadow: -2px 34px 75px -48px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 34px 75px -48px rgba(0,0,0,0.75);
+	box-shadow: -2px 34px 75px -48px rgba(0,0,0,0.75)
+
+}
+
+.bouton img{
+	width: 10em;
+	height: 6.5em;
+}
+
+
+/*generale*/
+
+#generale{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	background-color: #ECECE8;
+
+}
+
+
+.titre{
+	text-align: center;
+	margin-top: 2em;
+	color: #333639;
+	font-family: inherit;
+	letter-spacing: 0.20em;
+	font-size: 2em;
+}
+
+.bordure{
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: solid #333639;
+	height: 0.5em;
+	width: 3em;
+}
+
+
+/*cardio*/
+
+
+#cardio{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	padding-bottom: 3em;
+	width: 80%;
+}
+
+
+.gauche{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #F8F8F8;
+	flex-wrap: wrap;
+
+}
+
+
+.texte{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+
+.droite{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #F8F8F8;
+	flex-wrap: wrap-reverse;
+
+}
+
+/*froce*/
+
+#force{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	padding-bottom: 3em;
+	width: 80%;
+}
+
+/*conseil*/
+
+#conseil{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	padding-bottom: 3em;
+	width: 80%;
+
+}
+
+
+.nav-sport{
+	text-decoration: none;
+	color: black;
+}

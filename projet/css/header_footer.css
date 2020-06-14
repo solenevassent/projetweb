@@ -1,0 +1,205 @@
+/*////////////////////////////////////////////////////////
+					header
+///////////////////////////////////////////////////////*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ 
+ /*burger menu*/
+#sidebar{
+	position: fixed;
+	width: 13em;
+	height: 100%;
+	background-color: #E7C0EC;
+	left: -13em;
+	transition: all 500ms linear;
+}
+
+#sidebar.active{
+	left: 0em;
+}
+
+#sidebar .menu .bar{
+	padding: 15px 10px;
+}
+
+.menu .liens {
+	text-decoration: none;
+	color: #494948;
+	font-family: sans-serif;
+	margin-left: 2em;
+}
+
+#sidebar .toggle_btn{
+	position: absolute;
+	left: 15em;
+	top: 0.5em;
+}
+
+#sidebar .toggle_btn span{
+	display: block;
+	width: 2em;
+	height: 0.2em;
+	background-color: #022830;
+	margin: 0.3em 0em;
+
+}
+
+/*general header*/
+header{
+	position: fixed;
+	z-index:3;
+	display: flex;
+	flex-direction: row;
+	background-color: #E7C0EC ;
+	height: 3em;
+	width: 100%;
+}
+
+.egaliseur{
+	height: 3em;
+}
+
+h1{
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.liensh1{
+	text-decoration: none;
+	color: #022830;
+	
+}
+
+
+/*//////////////////////////////////////////////////////////
+					footer
+/////////////////////////////////////////////////////////*/
+.footer{
+	position: absolute;
+	height: 10em;
+	width: 100%;
+	margin-top: 2em;
+}
+
+#formulaire{
+	height: 3em;
+	background-color: #292B2E;
+	text-align: center;
+}
+
+.mail{
+  padding: 5px; /*hauteur de la case */
+    
+    /* Pour que tous les champs texte aient la même dimension */
+    width: 260px;
+    box-sizing: border-box;
+    border:1px solid #1C1D1E;
+    font-family : "handwriting";
+    margin-top: 0.8em;
+
+}
+
+.mail[type=email]:focus {
+  border: 1px solid #04132A;
+}
+
+.mail:invalid {
+  box-shadow: 0 0 3px 1px #E7C0EC;
+}
+
+.mail:focus:invalid {
+  outline: none;
+}
+
+.signin{
+	border: 1px groove #A8A7A7;
+	background-color: #292B2E;
+	padding:0.7em;
+	font-family: inherit;
+    letter-spacing: 0.20em;
+    font-size: 0.7em;
+    color: #A8A7A7;
+
+
+}
+.lien{
+	background-color: #E7C0EC;
+
+}
+
+.wrap{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 67%;
+	margin-right: 3em;
+}
+
+.lienfooter {
+	margin-left: 1em;
+}
+
+.contenue{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+
+}
+
+.logo{
+	margin-top: 5em;
+}
+
+.zen{
+	font-family: inherit;
+    letter-spacing: 0.20em;
+    font-size: 2em;
+    border: 1px groove #A8A7A7;
+	padding:1em;
+	margin-left: 2em;
+
+
+}
+
+
+
+.footertitre {
+	margin-top: 2em;
+	margin-bottom: 1em;
+    font-family: inherit;
+    letter-spacing: 0.20em;
+    font-size: 1.5em;
+    color: #292B2E;
+}
+
+
+.ulfooter {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0.4em;
+}
+
+.lifooter {
+  line-height: 2em;
+  font-family: inherit;
+  letter-spacing: 0.20em;
+  font-size: 1em;
+  color: #292B2E;
+}
+
+.textfooter {
+  text-decoration: none;
+  color: #292B2E;
+   
+}
+
+.copy{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 2em;
+}
